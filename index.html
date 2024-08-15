@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/agendar.css">    
+<title>BARBEARIA PROJETO</title>
+</head>
+<body>
+    <header><p>Barbearia</p>
+<ul class="menu">
+    <a href="#">Menu</a></li>
+    <a href="#">Produtos</a>
+    <a href="#">Serviços</a>
+<a href="#">Quem Somos</a>
+</ul>
+    </header>
+    <div>
+        <h1>Agende Seu Horário</h1>
+        <form id="formulario" action="">
+            <label for="name">Nome</label>
+            <input type="text" id="name" required>
+
+        <label for="phone">Telefone:</label>
+        <input type="tel" id="phone" required>
+
+        <label for="service">Serviço:</label>
+        <select name="" id="service" required>
+            <option value="corte">Corte de Cabelo</option>
+            <option value="barba">Barba</option>
+            <option value="corte_barba">Corte_barba</option>
+        </select>
+        <label for="data"> Data</label>
+        <input type="date" id="date" required >
+
+        <label for="time">Hora</label>
+        <input type="time" id="time" required>
+
+        <button type="button" onclick="submit()">Agendar</button>
+        <p id="confirmarmsg"></p>
+        </form>
+    </div>
+   
+    
+</body>
+<script src="script.js"></script>
+</html>
